@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    {% load static %}
+
+    {% block css %}
+    {% endblock %}
+
+</head>
+<body>
+
+    
+    <header>
+        <div class="inner-width">
+          <a href="#" class="logo"><img src="{% static 'core/imagenes/logo.png' %}" alt=""></a>
+          <i class="menu-toggle-btn fas fa-bars"></i>
+          <nav class="navigation-menu">
+            <a href="{% url 'index' %}"><i class="fas fa-home home"></i> Home</a>
+                <a href="{% url 'peliculas' %}"><i class="fas fa-film"></i> Peliculas</a>
+                <a href="{% url 'paginasinproces' %}"><i class="fas fa-search"></i> Busqueda</a>
+                <a href="{% url 'series' %}"><i class="fas fa-tv"></i></i> Series</a>
+                <a href="{% url 'listado_peliculas' %}"><i class="fas fa-list"></i> Listar</a>
+                {% if user.is_authenticated %}
+                <a href="#"><i class="fas fa-user fa-3x"style="color:black;"></i></a>
+                <a href="{% url 'nueva_pelicula' %}"><i class="fas fa-folder-plus"></i> agregar</a>
+                <a href="{% url 'logout'%}"><i class="fas fa-sign-in-alt Login"></i> Logout</a>
+                {% else %}
+                <a href="#"><i class="fas fa-user fa-3x"style="color:black;"></i></a>
+                <a href="{% url 'login'%}"><i class="fas fa-sign-in-alt Login"></i> Login</a>
+                {% endif%}
+          </nav>
+        </div>
+      </header>
+      
+    {% block contenido %}
+    {% endblock %}
+
+    <footer>
+
+        <div class="redes">
+            <ul>
+                <li><a href="https://es-la.facebook.com/" target="blank"><img src="{% static 'core/imagenes/icons/facebook.png' %}" alt="facebook" class="imgred" /></a></li>
+                <li><a href="#"><img src="{% static 'core/imagenes/icons/google.png' %}" alt="google+" class="imgred"/></a></li>
+                <li><a href="#"><img src="{% static 'core/imagenes/icons/instagram.png' %}" alt="instagram" class="imgred"/></a></li>
+                <li><a href="#"><img src="{% static 'core/imagenes/icons/instagram.png'  %}" alt="mail" class="imgred"/></a></li>
+                
+            </ul>
+            
+            
+            
+        </div>
+
+
+
+    </footer>
+
+    <script type="text/javascript">
+        $(".menu-toggle-btn").click(function () {
+            $(this).toggleClass("fa-times");
+            $(".navigation-menu").toggleClass("active");
+        });
+    </script>
+
+    {% block script %}
+
+    {% endblock %}
+
+
+    </body>
+
+</html>

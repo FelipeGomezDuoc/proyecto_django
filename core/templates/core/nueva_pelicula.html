@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+<title>nueva pelicula</title>
+
+
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="content">
+    <div class="agreg">
+
+    <h1>Nueva pelicula</h1>
+    <br>
+
+    <form action="" method="POST" enctype="">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="reset" value="limpiar">
+        <input type="submit" value="guardar">
+    </form>
+
+    </div>
+
+</div>
+{{ mensaje }}
+
+{% endblock %}

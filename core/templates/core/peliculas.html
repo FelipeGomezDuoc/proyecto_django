@@ -1,0 +1,117 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+<title>PELICULA</title>
+
+{% endblock %}
+
+
+{% block contenido %}
+<div class="contenido">
+
+    <div class="cont-img">
+        <a href="{% url 'pelicula_mulan' %}">
+            <img src="{% static 'core/imagenes/1.1.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'pelicula_padrino' %}">
+            <img src="{% static 'core/imagenes/1.2.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'pelicula_arde' %}">
+            <img src="{% static 'core/imagenes/1.3.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/1.4.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/1.5.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/1.6.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/1.7.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/1.8.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/1.9.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.0.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.1.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.2.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.3.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.4.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.6.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+    <div class="cont-img">
+        <a href="{% url 'paginasinproces' %}">
+            <img src="{% static 'core/imagenes/2.7.jpg' %}" class="caratula">
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="{% static 'core/css/estilos_peliculas.css' %}">
+<title>EL PADRINO</title>
+
+{% endblock %}
+
+
+{% block contenido %}
+<div class="contenido">
+    <h1>
+        PELICULA: EL Padrino
+    </h1>
+
+</div>
+
+
+<!-- aca empieza el carrusel -->
+
+
+
+<section class="carrusel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#">
+                    <img class="d-block" src="{% static 'core/imagenes/padrino1.png' %}" alt="#">
+                </a>
+                <div class="carousel-caption d-none d-md-block" id="">
+                    <h5> EL Padrino </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Sint illo ex beatae? Eos nihil architecto tenetur inventore quas! Nihil, distinctio!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'core/imagenes/lo_que_arde1.jpg' %}">
+                    <img class="d-block" src="{% static 'core/imagenes/padrino2.png' %}" alt="#">
+                </a>
+                <div class="carousel-caption d-none d-md-block" id="">
+                    <h5> EL Padrino </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Sint illo ex beatae? Eos nihil architecto tenetur inventore quas! Nihil, distinctio!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'core/imagenes/lo_que_arde3.jpg' %}">
+                    <img class="d-block" src="{% static 'core/imagenes/padrino3.png' %}" alt="#">
+                </a>
+                <div class="carousel-caption d-none d-md-block" id="">
+                    <h5> EL Padrino </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Sint illo ex beatae? Eos nihil architecto tenetur inventore quas! Nihil, distinctio!</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<div class="contenedor-inferior">
+    <aside class="lateral_1">
+        <h1>Trailer</h1>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sY1S34973zA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="disponi">
+            <h1>¿Te interesa?</h1>
+            <h5>puedes verla en:</h5>
+            <a
+                href="https://www.primevideo.com/detail/El-Padrino/0QX1EUXLLBS07CXIW1KY9F1K68?_encoding=UTF8&language=es_ES">Amazon
+                prime video</a>
+
+        </div>
+
+
+    </aside>
+    <aside class="lateral_2">
+        <img src="{% static 'core/imagenes/1.2.jpg' %}" alt="caratula" />
+        <h1>Sinopsis</h1>
+        <h5>Género: Drama Mafia Crimen Años 40 Años 50 Familia Película de culto</h5>
+        <p>
+            Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar
+            todas las posesiones
+            de la familia negociando con el Vaticano. Después de luchar toda su vida se encuentra cansado y centra todas
+            sus esperanzas en
+            encontrar a un sucesor que se haga cargo de los negocios.
+        </p>
+        <h2>Resumen:</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate error perspiciatis dolorem odit maiores
+            placeat non alias. Mollitia,
+            ducimus aliquid? Quis nesciunt cumque iste corporis! Illo accusantium nihil possimus quam. A praesentium
+            delectus nesciunt nam vel reprehenderit,
+            eius sunt similique earum reiciendis expedita, nihil eum repellendus ducimus aliquid! Quibusdam, ipsam.</p>
+    </aside><br>
+</div>
+
+{% endblock %}
+
+
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{% endblock %}

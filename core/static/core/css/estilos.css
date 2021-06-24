@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+header{
+    height: 150px;
+    background: #2f3640;
+  }
+  
+  .inner-width{
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+  }
+  
+  .logo{
+   
+    display: inline;
+    padding: 20px ;
+  }
+  
+  .logo img{
+    height: 30px;
+    padding: 12px;
+  }
+  
+  .navigation-menu{
+    width: 100%;
+    display: inline-block;
+    
+  }
+  
+  .navigation-menu a{
+    margin-left: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+  }
+  
+  .navigation-menu a:hover{
+    background: #fff;
+    color: #2f3640;
+    transform: scale(1.1);
+  }
+  
+  .navigation-menu i{
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  .home{
+    color: #ff6b6b;
+  }
+  
+  .Peliculas{
+    color: #0abde3;
+  }
+  
+  .Busqueda{
+    color: #feca57;
+  }
+  
+  .Series{
+    color: #5f27cd;
+  }
+  
+  .Login{
+    color: #ba27cd;
+  }
+  
+ 
+  
+  .menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+  }
+
+html{
+  margin-bottom: 0px;
+}
+body{
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+
+.contenido{
+
+    width: 100%;
+    padding: 0px;    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+
+.cont-img{
+    padding: 20px;
+    width: 160px;
+    margin: auto;
+}
+
+.caratula{
+    width: 150px;
+    height: 200px;
+}
+
+
+footer{
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+footer .redes{
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.redes{
+    background-color: darkblue;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.redes ul li{
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+
+.imgred{
+    height: 20px;
+}
+.content{
+  background-color: gray;
+  padding: 70px;
+}
+
+.agreg{
+  margin-left: 30%;
+  margin-bottom: 14%;
+}
+
+
+
+@media screen and (max-width:960px) {
+    .header {
+        flex-direction: column;
+    }
+    .footer {
+        display: none;
+    }
+    .contenido{
+        padding: 5px;
+    }
+    .menu-toggle-btn{
+        display: block !important;
+      }
+    
+      .navigation-menu{
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #172b4d;
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+      }
+    
+      .navigation-menu::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #172b4d;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+      }
+    
+      .navigation-menu a{
+        display: block;
+        margin: 10px 0;
+      }
+    
+      .navigation-menu.active{
+        display: block;
+      }
+
+}

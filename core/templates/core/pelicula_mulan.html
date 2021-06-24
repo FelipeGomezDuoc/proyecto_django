@@ -1,0 +1,126 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="{% static 'core/css/estilos_peliculas.css' %}">
+<title>MULAN</title>
+
+{% endblock %}
+
+{% block contenido %}
+<div class="contenido">
+    <h1>
+        PELICULA: Mulan (2020)
+    </h1>
+
+</div>
+
+
+
+<!-- aca empieza el carrusel -->
+
+
+<section class="carrusel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#">
+                    <img class="d-block" src="{% static 'core/imagenes/mulan1.png' %}" alt="#">
+                </a>
+                <div class="carousel-caption d-none d-md-block" id="">
+                    <h5> Mulan </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Magni corrupti commodi ut atque ipsa necessitatibus magnam unde dolor sunt nobis.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'core//imagenes/lo_que_arde1.jpg' %}">
+                    <img class="d-block" src="{% static 'core//imagenes/mulan2.png' %}" alt="#">
+                </a>
+                <div class="carousel-caption d-none d-md-block" id="">
+                    <h5> Mulan </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Magni corrupti commodi ut atque ipsa necessitatibus magnam unde dolor sunt nobis.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'core//imagenes/lo_que_arde3.jpg' %}">
+                    <img class="d-block" src="{% static 'core//imagenes/mulan3.png' %}" alt="#">
+                </a>
+                <div class="carousel-caption d-none d-md-block" id="">
+                    <h5> Mulan </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Magni corrupti commodi ut atque ipsa necessitatibus magnam unde dolor sunt nobis.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<div class="contenedor-inferior">
+    <aside class="lateral_1">
+        <h1>Trailer</h1>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IyC8Lf9qu5E" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+        <div class="disponi">
+            <h1>¿Te interesa?</h1>
+            <h5>puedes verla en:</h5>
+            <a href="https://disneylatino.com/mulan">Disney +</a>
+
+        </div>
+
+
+    </aside>
+    <aside class="lateral_2">
+        <img src="{% static 'core/imagenes/1.1.jpg' %}" alt="caratula" />
+        <h1>Sinopsis</h1>
+        <h5>Género: Acción y aventura, Drama, Niños y familia</h5>
+        <p>
+            Cuando el Emperador de China emite un decreto de que un hombre por familia debe servir en el Ejército Imperial 
+            para defender el país de los invasores del norte, Hua Mulan, la hija mayor de un guerrero honrado, interviene 
+            para tomar el lugar de su padre enfermo. Disfrazada de hombre, Hua Jun, se pone a prueba en cada paso del camino 
+            y debe aprovechar su fuerza interior y abrazar su verdadero potencial. Es un viaje épico que la transformará en una
+            guerrera honrada y le ganará el respeto de una nación agradecida … y un padre orgulloso.</p>
+        <h2>Resumen:</h2>
+        <p>La versión en vivo del director Niki Caro de la historia clásica de una joven china que se disfraza de hombre para 
+            convertirse en guerrera es emocionante de principio a fin. Está impregnado de lugares y detalles culturales tradicionales, 
+            pero se siente vigorosamente moderno con la ayuda de deslumbrantes efectos especiales y secuencias de acción innovadoras.
+
+            ¿Quieres trabajo aéreo inspirado en wuxia que desafíe la gravedad, y batallas de artes marciales elaboradas coreografiadas y 
+            acrobacias a caballo? Los tienes todos. Y una variedad realmente impresionante de actores veteranos ayuda a mantener las emociones 
+            en tierra, incluidos Tzi Ma, Donnie Yen, Jet Li y la diosa Gong Li</p>
+    </aside><br>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+{% endblock %}
+
+
